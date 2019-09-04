@@ -1,0 +1,13 @@
+<div class="container">
+    <form [formGroup]="InsertProductForm">
+    <div class="formGroup">
+        <label for="productID">ID:</label>
+        <input type="number" class="form-control" id="productID" placeholder="Enter Id" name="productID" formControlName="productID"><br>
+        <label for="name">Product name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter product name" name="name" formControlName="name"><br>
+        <label for="price">Price:</label>
+        <input type="number" class="form-control" id="price" placeholder="Enter price" name="price" formControlName="price"><br>
+    </div>
+    <button type="submit" class="btn btn-default" (click)="OnInsertProduct()">Submit</button>
+</form>
+</div>
